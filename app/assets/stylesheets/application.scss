@@ -1,0 +1,53 @@
+@import "purecss";
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.splash-container {
+    background: #FFD700;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+      height: 100%;
+    top: 20;
+    left: 0;
+    position: fixed !important;
+}
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.splash-head {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+.splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+.pure-button {
+    background-color: #FFFFFF;
+    color: gold;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+}

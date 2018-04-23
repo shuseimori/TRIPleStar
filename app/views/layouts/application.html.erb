@@ -7,7 +7,15 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+<header class="pure-menu pure-menu-horizontal">
+    <a href="/home" class="pure-menu-heading pure-menu-link">TRIPleStar</a>
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href= "/help" class="pure-menu-link">Help</a></li>
+        <li class="pure-menu-item"><a href= "/about" class="pure-menu-link">About</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Log in</a></li>
+    </ul>
+</div>
+</header>
   <body>
     <%= yield %>
   </body>
