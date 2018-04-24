@@ -6,9 +6,8 @@ h1 {
   text-align: center;
 }
 
-
 .splash-container {
-    background: #FFD700;
+    background: #ffc700;
     z-index: 1;
     overflow: hidden;
     width: 100%;
@@ -29,7 +28,7 @@ h1 {
 }
 
 .splash-head {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
     color: white;
     border: 3px solid white;
@@ -40,14 +39,14 @@ h1 {
 }
 
 .splash-subhead {
+    font-size: 25px;
     color: white;
     letter-spacing: 0.05em;
-    opacity: 0.8;
 }
 
 .pure-button {
     background-color: #FFFFFF;
-    color: gold;
+    color: #ffc700;
     padding: 0.5em 2em;
     border-radius: 5px;
 }
