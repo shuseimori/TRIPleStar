@@ -12,11 +12,19 @@
     <ul class="pure-menu-list">
         <li class="pure-menu-item"><a href= "/help" class="pure-menu-link">Help</a></li>
         <li class="pure-menu-item"><a href= "/about" class="pure-menu-link">About</a></li>
-        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Log in</a></li>
+        <% if user_signed_in? %>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Settings</a></li>
+        <% else %>
+        <li class="pure-menu-item"><a href="/users/sign_in" class="pure-menu-link">Log in</a></li>
+        <% end %>
     </ul>
 </div>
 </header>
   <body>
+    <div class = "splash-container">
+    <div class = "splash">
     <%= yield %>
+    </div>
+    </div>
   </body>
 </html>
