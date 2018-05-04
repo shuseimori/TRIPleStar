@@ -1,0 +1,18 @@
+<li>
+<% if current_user.microposts.any? %>
+<% @microposts.each do |t| %>
+  <span class="user"><%= link_to t.user.email %></span>
+  <div class = "imagebox">
+  <span class="pure-img"><%= image_tag t.image %></span>
+  </div>
+  <span class="content"><%= t.content %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(t.created_at) %> ago.
+  </span>
+  <br>
+  <br>
+  <% end %>
+  <% else %>
+  <p>no trip ever.</p>
+<% end %>
+</li>
